@@ -49,7 +49,8 @@ func (s *webDavServer) listenAndServe(compressor *middleware.Compressor) error {
 			ExposedHeaders:     s.config.Cors.ExposedHeaders,
 			MaxAge:             s.config.Cors.MaxAge,
 			AllowCredentials:   s.config.Cors.AllowCredentials,
-			OptionsPassthrough: true,
+			OptionsPassthrough: false,
+			Debug: true,
 		})
 		handler = c.Handler(handler)
 	}
