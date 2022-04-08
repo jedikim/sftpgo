@@ -95,6 +95,7 @@ type Binding struct {
 	// List of IP addresses and IP ranges allowed to set X-Forwarded-For/X-Real-IP headers.
 	ProxyAllowed     []string `json:"proxy_allowed" mapstructure:"proxy_allowed"`
 	allowHeadersFrom []func(net.IP) bool
+	RemoveWAuthHeader     bool `json:"remove_w_auth_header" mapstructure:"remove_w_auth_header"`
 }
 
 func (b *Binding) parseAllowedProxy() error {
