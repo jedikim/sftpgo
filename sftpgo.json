@@ -38,12 +38,7 @@
         "period": 1000,
         "burst": 1,
         "type": 2,
-        "protocols": [
-          "SSH",
-          "FTP",
-          "DAV",
-          "HTTP"
-        ],
+        "protocols": ["SSH", "FTP", "DAV", "HTTP"],
         "allow_list": [],
         "generate_defender_events": false,
         "entries_soft_limit": 100,
@@ -67,13 +62,7 @@
     "macs": [],
     "trusted_user_ca_keys": [],
     "login_banner_file": "",
-    "enabled_ssh_commands": [
-      "md5sum",
-      "sha1sum",
-      "cd",
-      "pwd",
-      "scp"
-    ],
+    "enabled_ssh_commands": ["md5sum", "sha1sum", "cd", "pwd", "scp"],
     "keyboard_interactive_authentication": false,
     "keyboard_interactive_auth_hook": "",
     "password_authentication": true,
@@ -122,7 +111,8 @@
         "client_auth_type": 0,
         "tls_cipher_suites": [],
         "prefix": "",
-        "proxy_allowed": []
+        "proxy_allowed": [],
+        "remove_w_auth_header": true
       }
     ],
     "certificate_file": "",

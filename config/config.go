@@ -63,14 +63,15 @@ var (
 		Debug:                      false,
 	}
 	defaultWebDAVDBinding = webdavd.Binding{
-		Address:         "",
-		Port:            0,
-		EnableHTTPS:     false,
-		MinTLSVersion:   12,
-		ClientAuthType:  0,
-		TLSCipherSuites: nil,
-		Prefix:          "",
-		ProxyAllowed:    nil,
+		Address:           "",
+		Port:              0,
+		EnableHTTPS:       false,
+		MinTLSVersion:     12,
+		ClientAuthType:    0,
+		TLSCipherSuites:   nil,
+		Prefix:            "",
+		ProxyAllowed:      nil,
+		RemoveWAuthHeader: false,
 	}
 	defaultHTTPDBinding = httpd.Binding{
 		Address:               "",
